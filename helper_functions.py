@@ -302,7 +302,7 @@ def save_df_to_csv(df: pd.DataFrame, filename: str):
     df.to_csv(filename, index=False)
     return
 
-def horizontal_bar_chart(x: pd.DataFrame, y: pd.DataFrame):
+def horizontal_bar_chart(x: pd.Series, y: pd.Series):
     fig, ax = plt.subplots(figsize =(16, 9))
  
     # Horizontal Bar Plot
